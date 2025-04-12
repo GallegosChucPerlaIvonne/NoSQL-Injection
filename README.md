@@ -1,5 +1,5 @@
 ## Asinación: NoSQL Injection Vulnerable App
-# Estructura de archivos
+# Estructura
 Este repositorio contiene una aplicación web vulnerable que demuestra un ataque de NoSQL Injection utilizando MongoDB y Node.js.
 # Descripción del Proyecto
 Este proyecto fue creado para Temas Especiales de Seguridad Informática. La aplicación simula un sistema de login de una empresa que utiliza MongoDB como base de datos, pero que contiene una vulnerabilidad crítica de seguridad que permite a un atacante iniciar sesión sin conocer las credenciales correctas.
