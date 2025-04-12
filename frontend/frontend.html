@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de NoSQL Injection</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #373663;
+        }
+        .instrucciones {
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sesion {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #2f194b;
+        }
+        h1 {
+            font-size:x-large;
+            color: #e4cd4a;
+        }
+        h2{
+            font-size: 17px;
+            color: #e4cd4a;
+        }
+        p{
+            color: #e4cd4a;
+        }
+        li{
+            color: #e4cd4a;
+        }
+        label{
+            color: #e4cd4a;
+        }
+        input, button {
+            padding: 7px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #b39c1a;
+            color: #fff0a2;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-height: 50px;
+            background-color: #22192e;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: #b39c1a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prueba NoSQL Injection</h1>
+    <div class="instrucciones">
+        <p>Enunciado: una empresa creó un sistema de login con MongoDB, pero olvidó asegurarlo. ¿Puedes iniciar sesión sin saber la contraseña? Usa el usuario admin</p>
+        <h2>Pistas:</h2>
+        <ul>
+            <li>Sabías que... los sistemas a veces aceptan más que texto plano?</li>
+            <li>Qué pasaría si en vez de una contraseña envías una instruccion? *guiño guiño*</li>
+            <li>Se aceptan espacios</li>
+        </ul>
+    </div>
+
+    <div class="sesion">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" action="/login" method="POST">
+            <div>
+                <input type="text" id="username" name="username" placeholder="Usuario">
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder='Contraseña'>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
+
+
