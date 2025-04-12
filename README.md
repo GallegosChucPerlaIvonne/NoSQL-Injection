@@ -3,8 +3,6 @@
 Este repositorio contiene una aplicación web vulnerable que demuestra un ataque de NoSQL Injection utilizando MongoDB y Node.js.
 # Descripción del Proyecto
 Este proyecto fue creado para Temas Especiales de Seguridad Informática. La aplicación simula un sistema de login de una empresa que utiliza MongoDB como base de datos, pero que contiene una vulnerabilidad crítica de seguridad que permite a un atacante iniciar sesión sin conocer las credenciales correctas.
-# Objetivo
-Crear una aplicación web con una vulnerabilidad de NoSQL Injection deliberada utilizando MongoDB, para demostrar cómo funciona este tipo de ataque y cómo protegerse contra él.
 # Tecnologías Utilizadas
 Backend: Node.js con Express.js
 Base de Datos: MongoDB Atlas
